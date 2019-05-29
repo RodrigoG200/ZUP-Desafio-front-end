@@ -1,0 +1,38 @@
+<aside #CandidatosAtendidos>
+
+    <form class="search-cand" [formGroup]="searchForm">
+        <input formControlName="searchControl" type="text" size="80" maxlength="300" placeholder="Buscar">
+        <img src="../../assets/img/icons/search.png"/>
+    </form>
+    
+    <div class="conteiner-candidate">    
+      <div  class="conteiner-candidate-int" *ngFor="let candidate of candidates">
+          <a [routerLink]="['/accepted', candidate.id]"> 
+            <div class="candidate-photo">
+              <figure class="photo">
+                  <img [src]="candidate.url">
+              </figure>
+            </div>
+            <div class="candidate-name">
+                <p>{{candidate.name}}</p>
+            </div>
+            <div class="candidate-email">
+                <p>{{candidate.email}}</p>
+            </div>
+            <div class="candidate-phone">   
+                <p>{{candidate.phone}}</p>
+            </div>
+            <div class="candidate-local">
+                <p>{{candidate.local}}</p>
+            </div>
+            </a>
+            <div class="candidate-selector">
+              <figure class="icons">
+                  <a (click)="enviarParaLixeira(candidate)"><img [src]="candidate.delete"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a (click)="enviarParaGeral(candidate)"><img [src]="candidate.select"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </figure>
+            </div>
+
+      </div>
+    </div>
+  </aside>

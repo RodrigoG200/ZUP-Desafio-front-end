@@ -1,0 +1,66 @@
+<section class="container-datail">
+
+    <div class="container-datail-up">
+      <a [routerLink]="['/trash']"><p><</p></a>
+    <div class="container-datail-int">
+      <div class="container-datail-int-up" *ngIf="candidate">
+        <figure>
+          <div class="container-datail-photo-a"><img class="container-datail-photo-b" [src]="candidate?.url"></div>
+        </figure>
+      </div>
+        <div class="container-datail-int-down">
+            <div class="candidates-info">
+                <figure>
+                  <div class="dropdown">
+                    <img class="dropbtn" src="../../assets/img/icons/detail/user-name.png">
+                    <div class="dropdown-content-user">
+                      <p class="response-info-a">{{candidate?.textname}}</p>
+                      <p class="response-info-b">{{candidate?.name}} {{candidate?.lastname}}</p>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                      <img class="dropbtn" src="../../assets/img/icons/detail/mail.png">
+                      <div class="dropdown-content-mail">
+                        <p class="response-info-a">{{candidate?.textemail}}</p>
+                        <p class="response-info-b"> {{candidate?.email}}</p>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <img class="dropbtn" src="../../assets/img/icons/detail/calendar.png">
+                      <div class="dropdown-content-calendar">
+                        <p class="response-info-a">{{candidate?.textcalendar}}</p>
+                        <p class="response-info-b">{{candidate?.birthday}}</p>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <img class="dropbtn" src="../../assets/img/icons/detail/address.png">
+                      <div class="dropdown-content-address">
+                        <p class="response-info-a">{{candidate?.textadress}}</p>
+                        <p class="response-info-b">{{candidate?.address}}</p>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <img class="dropbtn" src="../../assets/img/icons/detail/phone.png">
+                      <div class="dropdown-content-phone">
+                        <p class="response-info-a">{{candidate?.textphone}}</p>
+                        <p class="response-info-b">{{candidate?.phone}}</p>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <img class="dropbtn" src="../../assets/img/icons/detail/password.png">
+                      <div class="dropdown-content-password">
+                        <p class="response-info-a">{{candidate?.textpassword}}</p>
+                        <p class="response-info-b">{{candidate?.password}}</p>
+                      </div>
+                  </div>
+                </figure>
+              </div>
+        </div>
+    </div>
+    </div>
+  
+    <div class="container-datail-down">
+  
+    </div>
+  
+  </section>

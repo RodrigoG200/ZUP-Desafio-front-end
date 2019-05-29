@@ -1,1 +1,549 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    justify-content: space-between; 
+    width: auto;
+    height: auto;
+}
+
+/*CABEÇALHO*/
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(19, 47, 74);
+    height: 65px;
+    width: 1300px;
+    box-shadow: 0px 3px 5px rgb(19, 47, 74);
+}
+
+.figure-logo {
+    height: 50px;
+    width: 90px; 
+    margin: 0;
+    margin-left: 15px;
+}
+
+.logozup {
+    position: relative;
+    height: 50px;
+    width: 90px;  
+}
+
+.figure-user {
+    height: 35px;
+    width: 35px; 
+    margin: 0;
+    margin-right: 15px;
+}
+
+.userzup {
+    position: relative;
+    height: 35px;
+    width: 35px;  
+    background-color: white;
+    border-radius: 18px;
+}
+
+aside input {
+    position: relative;
+    top: -70px;
+    right: 100px;
+    height: 35px;
+    width: 820px;
+    border-radius: 18px;
+    padding-left: 38px;
+    font-size: 15pt;
+}
+
+.search-cand img {
+    position: relative;
+    height: 17px;
+    width: 17px;  
+    right: 910px;
+    bottom: 72px
+}
+
+::placeholder {
+    color: rgb(19, 47, 74);
+  }
+
+
+
+/*MENU ESQUERDO*/
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: black;*/
+    height: 700px;
+    width: 1300px;
+}
+
+.conteiner-menu {
+
+    display: flex;
+    /*background-color: yellow;*/
+    height: 700px;
+    width: 180px;
+    border-right: 1px solid #e7e4e4;
+    box-shadow: 4px 0px 5px #e7e4e4;
+}
+
+.menuu {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.menuu li {
+    /*background-color: red;*/
+    list-style: none;
+    text-align: left;
+    line-height: 40px;
+    font-size: 17pt;
+    margin-top: 5%;
+}
+.menuu a {
+    text-decoration: none;
+    color: gray;
+}
+
+.menuu img {
+    height: 20px;
+    width: 20px;
+}
+.menuu img:hover {
+    height: 20px;
+    width: 20px;
+    color: green;
+}
+
+/*CONTEUDO*/
+
+
+aside {
+    background-color: rgb(244, 247, 244);
+    height: 700px;
+    width: 1120px;
+    padding-top: 2%;
+}
+
+.conteiner-candidate {
+    flex-direction: column;
+    height: 612px;
+    width: 1030px;
+    margin-left: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 15px #b4b2b2;
+    border-radius: 5px;
+}
+
+.conteiner-candidate-int {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 66px;
+    width: 1030px;
+    border-top: 1px solid rgb(211, 208, 208);
+    border-bottom: 1px solid rgb(211, 208, 208);
+    align-items: right;
+}
+
+.conteiner-candidate-int a { 
+    display: flex;
+    height: 65px;
+    width: 840px;
+    align-items: center;
+    text-decoration: none;
+}
+
+div p {
+    color: gray;
+}
+
+.candidate-photo {
+    display: flex;
+    align-items: center;
+    width: 85px;
+}
+
+.candidate-name p {
+    display: flex;
+    color: black;
+    font-size: 14pt;
+    width: 165px;
+    margin: 0;
+    margin-left: 15%
+
+
+}
+
+.candidate-name {
+    display: flex;
+    align-items: center;
+    width: 165px;
+}
+
+.candidate-email {
+    display: flex;
+    align-items: center;
+    width: 270px;
+}
+.candidate-email p {
+    display: flex;
+    color: gray;
+    width: 270px;
+    margin: 0
+}
+
+.candidate-phone {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.candidate-phone p {
+
+    color: gray;
+    width: 150px;
+    margin: 0;
+}
+
+.candidate-local {
+    display: flex;
+    align-items: center;
+    width: 215px;
+}
+
+.candidate-local p {
+    display: flex;
+    color: gray;
+    width: 215px;
+    margin: 0;
+    padding-left: 20%
+    
+}
+
+.candidate-selector {
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+
+.photo {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.photo img {
+    width: 44px;
+    height: 44px;
+    border-radius: 20px;
+
+}
+
+.icons {
+    display: flex;
+    margin: 0;
+    width: 90px;
+    margin-left: 20%
+
+}
+.icons img {
+    width: 16px;
+    height: 16px;
+    
+    
+}
+
+article table {
+    display: table;
+    position: relative;
+    background-color: gray;
+    height: 600px;
+    width: 1030px;
+    left: 50px;
+    border-radius:5px;
+    box-shadow: 0 1px 2px 4px #b4b2b2;
+}
+tr {
+    background-color: white;
+    border-color: white;
+    margin-bottom: 10px;
+}
+td {
+    align-items: right;
+    /*background-color: blue;*/
+}
+
+
+
+
+
+
+
+/*INICIO DA DOS DADOS PESSOAIS*/
+
+
+
+
+.container-datail {
+    display: flex;
+    position: relative;
+    height: 770px;
+    width: 1300px;
+    right: 180px;
+    bottom: 30px;
+    flex-direction: column;
+    
+}
+
+.container-datail-up {
+    display: flex;
+    background-color: rgb(19, 47, 74);
+    width: 100%;
+    height: 45%;
+}
+
+.container-datail-up a {
+    position: relative;
+    background-color: white;
+    width: 2.8%;
+    height: 10%;
+    border-radius: 30px;
+    margin: 22px;
+    text-decoration: none;
+}
+
+.container-datail-up a p {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    font-size: 20pt;
+    color: rgb(19, 47, 74);
+    font-weight: bold;
+    bottom: 2px;
+    
+}
+
+
+.container-datail-down {
+    background-color: rgb(227, 233, 227);
+    height: 55%;
+    width: 100%;
+}
+
+.container-datail-int {
+    display: flex;
+    position: absolute;
+    height: 67%;
+    width: 54%;
+    flex-direction: column;
+    margin-left: 24%;
+    margin-top: 9%;
+    box-shadow: 0px 0px 10px rgb(207, 209, 207);
+    border-radius: 5px;
+}
+
+.container-datail-int-up {
+    display: flex;
+    display: flex;
+    background-color: rgb(227, 233, 227);
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid rgb(207, 209, 207);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container-datail-photo-a {
+    position: relative;
+    width: 170%;
+    height: 170%;
+    border-radius: 140px;
+    border: 1px solid grey;
+    left: 190%;
+    top: 20%
+}
+
+.container-datail-photo-b {
+    position: relative;
+    width: 97%;
+    height: 97%;
+    border-radius: 140px;
+    top: 1.5%
+}
+
+
+
+.container-datail-int-down {
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.candidates-info {
+    position: absolute;
+    height: 14%;
+    width: 100%;
+    top: 75%
+}
+
+.candidates-info figure {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-left: 21%
+}
+
+
+.dropbtn {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .dropdown {
+    height: 45px;
+    width: 45px;
+    position: relative;
+    display: inline-block;
+    margin-left: 3%;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content-user {
+    display: none;
+    position: absolute;
+    min-width: 320px;
+    bottom: 80px;
+    left: 25px;
+}
+
+.dropdown:hover .dropdown-content-user {display: block;}
+
+
+.dropdown-content-mail {
+    display: none;
+    position: absolute;
+    width: 500px;
+    bottom: 80px;
+    right: -320px;
+  }
+
+.dropdown:hover .dropdown-content-mail {display: block;}
+
+.dropdown-content-calendar {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    bottom: 80px;
+    left: -65px;
+  }
+
+.dropdown:hover .dropdown-content-calendar {display: block;}
+
+.dropdown-content-address {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    bottom: 80px;
+    left: -150px;
+  }
+
+.dropdown:hover .dropdown-content-address {display: block;}
+
+.dropdown:hover .dropdown-content-calendar {display: block;}
+
+.dropdown-content-phone {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    bottom: 80px;
+    left: -200px;
+  }
+
+.dropdown:hover .dropdown-content-phone {display: block;}
+
+.dropdown-content-password {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    bottom: 80px;
+    left: -260px;
+  }
+
+.dropdown:hover .dropdown-content-password {display: block;}
+
+
+.response-info-a {
+    font-size: 15pt;
+    margin: 0
+}
+
+.response-info-b {
+    font-size: 23pt;
+    font-weight: bold;
+    margin: 0
+}
+  
+
+  /*FIM DA DOS DADOS PESSOAIS*/
+
+
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px; 
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:226px;
+  }
+   
+  #btnBusca{
+    float:left;
+    cursor:pointer;
+  }
+   
+  #divBusca img{
+    float:left;
+  }
+   
+  #divBusca{
+    border:solid 10px rgba(47, 79, 79, 0.8);
+    border-radius:10px;
+    height:37px;
+    width:400px;
+  }
