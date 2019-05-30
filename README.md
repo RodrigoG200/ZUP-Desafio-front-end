@@ -1,6 +1,5 @@
-Esse projeto gerado e desenvoldido com Angular CLI version 7.3.9 para atender as exigencias minimas do desafio front-end em angular da ZUP.
-
-Tratasse de uma aplicaçao que gerencia candidatos que estão em processo seletivo.
+Esse projeto gerado e desenvolvido com Angular CLI version 7.3.9 para atender as exigências mínimas do desafio front-end em angular da ZUP.
+Tratasse de uma aplicação que gerencia candidatos que estão em processo seletivo.
 
 OBS: Esse projeto não inclui orientação a objeto para manipular os candidatos entre as rotas Todos, Atendidos e Lixeira.
 
@@ -8,7 +7,7 @@ Para inicializar a aplicação via webpack, navegar via terminal até a pasta de
 
 -ng serve
 
-Esse consome uma API REST com os dados pre-registrados para cada rota sendo assim é necessario isntalar o json-server pelos comandos abaixo.
+Esse consome uma API REST com os dados pre-registrados para cada rota sendo assim é necessário instalar o json-server pelo comando:
 
 -npm install -g json-server
 
@@ -19,5 +18,3 @@ Caso ja haja instalado esse serviço basta navegar via terminal até a pasta ond
 Para visualizar e interagir com a aplicação no navegador basta acessar:
 
 -http://localhost:4200/
-
-
