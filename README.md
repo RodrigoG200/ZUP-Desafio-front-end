@@ -1,27 +1,23 @@
-# ZupFrontEnd
+Esse projeto gerado e desenvoldido com Angular CLI version 7.3.9 para atender as exigencias minimas do desafio front-end em angular da ZUP.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Tratasse de uma aplicaçao que gerencia candidatos que estão em processo seletivo.
 
-## Development server
+OBS: Esse projeto não inclui orientação a objeto para manipular os candidatos entre as rotas Todos, Atendidos e Lixeira.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para inicializar a aplicação via webpack, navegar via terminal até a pasta de origem do projeto e executar o comando:
 
-## Code scaffolding
+-ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Esse consome uma API REST com os dados pre-registrados para cada rota sendo assim é necessario isntalar o json-server pelos comandos abaixo.
 
-## Build
+-npm install -g json-server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Caso ja haja instalado esse serviço basta navegar via terminal até a pasta onde se encontra o arquivo db.json pelo comando:
 
-## Running unit tests
+-json-server db.json
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para visualizar e interagir com a aplicação no navegador basta acessar:
 
-## Running end-to-end tests
+-http://localhost:4200/
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
